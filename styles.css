@@ -28,7 +28,8 @@ html {
     flex-direction: column;
     align-items: center;
     gap: 100px;
-    padding: 50px;
+    padding: 100px;
+    min-width: 850px
 }
 
 h4 {
@@ -40,15 +41,15 @@ h3 {
 }
 
 h2 {
-    font-size: 2.5vw !important;
+    font-size: 30px !important;
 }
 
 h1 {
-    font-size: 8vw !important;
+    font-size: 92px !important;
 }
 
 p{
-    font-size: 2vw !important;
+    font-size: 25px !important;
 }
 
 .apple-blue {
@@ -82,12 +83,15 @@ p{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: -10px;
+    gap: -30px;
     line-height: 100px;
+    text-align: center;
+    font-weight: bold;
 }
 
 .about-image{
-    transform: translateY(-40px);
+    transform: translateY(-50px);
+    width: 100%;
 }
 
 .features-image{
@@ -98,4 +102,65 @@ p{
     text-align: center;
     z-index: 1;
 }
+
+.content-item {
+    width: 100%;
+}
+
+.home-image{
+    max-width: 600px;
+    margin-top: 80px;
+    margin-left: -75px;
+}
+
+
+.features-text-1 {
+    max-width: 300px;
+    font: normal;
+    position: absolute;
+    transform: translate(225%, 300%);
+}
+
+
+@media only screen 
+    and (max-width: 900px){
+        .home-image{
+           margin-top: 20px;
+           margin-left: 0px;
+        }
+} 
+
+/*
+@media only screen 
+    and (min-width: 1024px){
+        .content-item{
+            border: 2px solid blue;
+        }
+} 
+
+@media only screen 
+    and (max-width: 1024px){
+        .content-item{
+            border: 2px solid green;
+        }
+} 
+
+@media only screen 
+    and (max-width: 850px){
+        .content-item{
+            border: 2px solid yellow;
+        }
+ 
+    
+} 
+
+@media only screen 
+    and (max-width: 640px){
+        .content-item{
+            border: 2px solid red;
+        }
+
+}
+        */
+        
 

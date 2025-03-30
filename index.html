@@ -6,17 +6,27 @@
     </head>
     <body>
 
-    <div class = "header">
-        <a href = "#home"><h4>luminary</h4></a>
+    <!-- NAVIGATION -->
+    <nav class = "header">
+        <a href = "#">
+            <div class = "flex flex-row gap-2">
+                <h4>luminary</h4>
+                <img width = "15px" src = "assets/LuminaryIcon.svg"/>
+            </div>
+        </a>
+    
         <div class = "flex gap-20">
             <a href = "#about">About</a>
             <a href = "#features">Features</a>
         </div>
-    </div>
+    </nav>
 
     
+    
     <div class = "content-body">
-        <div id = "home" class = "flex justify-center">
+        
+        <!--HOME -->
+        <div class = "content-item flex flex-wrap justify-center">
             <div class = "flex flex-col justify-center gap-10 max-w-[400px]">
                 <div class = "flex flex-col">
                     <h2><span class = "apple-light-blue">Introducing</span> <span class = "apple-blue font-semibold">Luminary.</span></h2>
@@ -38,43 +48,55 @@
                     </a>
                 </div>
             </div>
-            <img src = "assets/Luminary1.png" width="400px"/>
+            <img src = "assets/Luminary1.png" class = "home-image"/>
         </div>
     
-        <div id = "about" class = "flex flex-col items-center px-20">
+        <!-- ABOUT -->
+        <div id = "about" class = "content-item flex flex-col items-center px-20">
             <div class = "accessible-text-bg">
                 <h1>Accessible</h1>
                 <h1 class = "apple-light-blue">Navigation</h1>
                 <h1 class = "apple-blue">Is Our Goal</h1>
             </div>
 
-            <img class = "about-image" src = "assets/Luminary2.png" width="800px"/>
+            <img class = "about-image" src = "assets/Luminary2.png"/>
             
     
-            <div class = "text-center px-10" >
+            <div class = "text-center px-10 max-w-90" >
                 <p> Built by UNC students for UNC students, Luminary is a startup dedicated to accessibility, providing tailored directions for students with disabilities. - Our mission is to make campus navigation easier and more inclusive, ensuring everyone can move freely and confidently.</p>
             </div>
         </div>
 
-        <div id = "features" class = "relative w-full h-full flex justify-center items-center" style = "border: 1px solid red">
+
+        <!-- FEATURES -->
+        <div id = "features" class = "content-item relative w-full h-full flex justify-center items-center">
             <div class="relative w-full" style="stroke: var(--apple-blue)">
-                <p class="max-w-80 font-normal absolute top-[25%] right-[27%] transform translate-x-1/2 -translate-y-1/2">
-                    Report obstacles on campus
-                </p>
 
-                <svg class="absolute inset-0 w-full h-full -z-10" viewBox="0 0 500 500">
-                    <circle cx="270" cy="150" r="30" />
-                    <line x1="300" y1="150" x2="425" y2="150" />
-                </svg>
-
-                <p class="max-w-80 font-normal absolute top-[75%] right-[70%] transform translate-x-1/2 -translate-y-1/2">
-                    Get custom directions based on your needs
-                </p>
-                
+                <div>
+                    
+    
+                    <svg class="absolute inset-0 w-full h-full -z-10" viewBox="0 0 500 500">
+                        <circle cx="270" cy="150" r="30" />
+                        <line x1="300" y1="150" x2="425" y2="150" />
+                        <text font-size="smaller" x="315" y="125" fill="white" stroke="none">
+                            Report obstacles
+                        </text>
+                        <text font-size="smaller" x="315" y="140" fill="white" stroke="none">
+                            on campus
+                        </text>
+                    </svg>
+                </div>
 
                 <svg class="absolute inset-0 w-full h-full -z-10" viewBox="0 0 500 500">
                     <circle cx="215" cy="400" r="30" stroke/>
-                    <line x1="185" y1="400" x2="50" y2="400" />
+                    <line x1="185" y1="400" x2="45" y2="400" />
+
+                    <text font-size="smaller" x="48" y="375" fill="white" stroke="none">
+                        Get custom directions
+                    </text>
+                    <text font-size="smaller" x="48" y="390" fill="white" stroke="none">
+                         based on your needs
+                    </text>
                 </svg>
 
 
@@ -86,7 +108,7 @@
            
         </div>
     
-        <div id = "appstore" >
+        <div id = "appstore" class = "content-item">
             <div class = "flex flex-col items-center gap-5">
                 <h2>Download Luminary Today</h2>
                 <img src = "assets/AppStore.png" width = "300px" />
@@ -94,7 +116,8 @@
         </div>
     
     
-        <div class="flex gap-5 p-10 w-full">
+        <!--SOCIAL MEDIA LINKS -->
+        <div class="content-item flex gap-5 p-10 w-full">
             <button class = "link-button w-10 h-10">
                 <svg class="w-16 h-16 css-221qx1" aria-hidden="true" viewbox = "-3 -3 30 30"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"></path></svg>
             </button>
