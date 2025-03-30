@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <script src="https://cdn.tailwindcss.com" rel="stylesheet"></script>
+        <link rel="stylesheet" href="styles.css">
+        <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    </head>
+    <body>
+
+    <div class = "header">
+        <a href = "#home"><h4>luminary</h4></a>
+        <div class = "flex gap-20">
+            <a href = "#about">About</a>
+            <a href = "#features">Features</a>
+        </div>
+    </div>
+
+    
+    <div class = "content-body">
+        <div id = "home" class = "flex justify-center">
+            <div class = "flex flex-col justify-center gap-10 max-w-[400px]">
+                <div class = "flex flex-col">
+                    <h2><span class = "apple-light-blue">Introducing</span> <span class = "apple-blue font-semibold">Luminary.</span></h2>
+                    <h2>The smarter way to navigate UNC Chapel Hill.</h2>
+                </div>
+                <div class = "flex gap-3">
+                    <a href = "#appstore">
+                        <button class = "pl-4 pr-4 about-button">
+                           <svg class="w-6 h-6 css-221qx1" style="fill: var(--apple-blue)" focusable="false" aria-hidden="true" viewBox="-2 -2 30 30" data-testid="AppleIcon" aria-label="fontSize large"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"></path></svg>
+                        </button>
+                    </a>
+
+                    <a href = "#about">
+                        <button class = "about-button">About</button>
+                    </a>
+
+                    <a href = "#features">
+                        <button class = "about-button">Features</button>
+                    </a>
+                </div>
+            </div>
+            <img src = "assets/Luminary1.png" width="400px"/>
+        </div>
+    
+        <div id = "about" class = "flex flex-col items-center px-20">
+            <div class = "accessible-text-bg">
+                <h1>Accessible</h1>
+                <h1 class = "apple-light-blue">Navigation</h1>
+                <h1 class = "apple-blue">Is Our Goal</h1>
+            </div>
+
+            <img class = "about-image" src = "assets/Luminary2.png" width="800px"/>
+            
+    
+            <div class = "text-center px-10" >
+                <p> Built by UNC students for UNC students, Luminary is a startup dedicated to accessibility, providing tailored directions for students with disabilities. - Our mission is to make campus navigation easier and more inclusive, ensuring everyone can move freely and confidently.</p>
+            </div>
+        </div>
+
+        <div id = "features" class = "relative w-full h-full flex justify-center items-center" style = "border: 1px solid red">
+            <div class="relative w-full" style="stroke: var(--apple-blue)">
+                <p class="max-w-80 font-normal absolute top-[25%] right-[27%] transform translate-x-1/2 -translate-y-1/2">
+                    Report obstacles on campus
+                </p>
+
+                <svg class="absolute inset-0 w-full h-full -z-10" viewBox="0 0 500 500">
+                    <circle cx="270" cy="150" r="30" />
+                    <line x1="300" y1="150" x2="425" y2="150" />
+                </svg>
+
+                <p class="max-w-80 font-normal absolute top-[75%] right-[70%] transform translate-x-1/2 -translate-y-1/2">
+                    Get custom directions based on your needs
+                </p>
+                
+
+                <svg class="absolute inset-0 w-full h-full -z-10" viewBox="0 0 500 500">
+                    <circle cx="215" cy="400" r="30" stroke/>
+                    <line x1="185" y1="400" x2="50" y2="400" />
+                </svg>
+
+
+                <img class = "features-img w-90 mx-auto" src = "assets/Luminary3.png">
+
+            </div>
+
+            
+           
+        </div>
+    
+        <div id = "appstore" >
+            <div class = "flex flex-col items-center gap-5">
+                <h2>Download Luminary Today</h2>
+                <img src = "assets/AppStore.png" width = "300px" />
+            </div>
+        </div>
+    
+    
+        <div class="flex gap-5 p-10 w-full">
+            <button class = "link-button w-10 h-10">
+                <svg class="w-16 h-16 css-221qx1" aria-hidden="true" viewbox = "-3 -3 30 30"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"></path></svg>
+            </button>
+            
+            <button class = "link-button w-10 h-10">
+                <svg class="w-16 h-16 css-221qx1" aria-hidden="true" viewbox = "-3 -3 30 30"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"></path></svg>
+            </button>
+    
+            <button class = "link-button w-10 h-10">
+                <svg class="w-16 h-16 css-221qx1" aria-hidden="true" viewbox = "-5 -5 35 35"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+            </button>
+        </div>
+
+    </div>
+
+    
+    
+    </body>
+</html>

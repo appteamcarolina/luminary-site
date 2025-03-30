@@ -1,0 +1,101 @@
+body{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: 'Inter';
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+:root {
+    --apple-blue: #0385FF;
+    --apple-light-blue:#79B3ED;
+}
+
+.header{
+    padding: 20px 40px;
+    position: sticky; 
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.612);
+    z-index: 10;
+}
+
+.content-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    padding: 50px;
+}
+
+h4 {
+    font-size: large !important;
+}
+
+h3 {
+    font-size: x-large !important;
+}
+
+h2 {
+    font-size: 2.5vw !important;
+}
+
+h1 {
+    font-size: 8vw !important;
+}
+
+p{
+    font-size: 2vw !important;
+}
+
+.apple-blue {
+    color: var(--apple-blue);
+}
+
+.apple-light-blue {
+    color: var(--apple-light-blue);
+}
+
+.about-button {
+    background-color: #0a84ff35;
+    padding: 15px 40px;
+    color: var(--apple-blue);
+    border-radius: 15px;
+}
+
+.link-button {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.link-button:hover{
+    transform: translate(0, -2px);
+}
+
+.accessible-text-bg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: -10px;
+    line-height: 100px;
+}
+
+.about-image{
+    transform: translateY(-40px);
+}
+
+.features-image{
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 1;
+}
+
